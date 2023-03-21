@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="53dae872b2054ebda2e78451c8375324" Name="Diagram1">
+        <EntityTypeShape EntityType="CRM4Model.ConnectedService" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.Contract" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.ContractType" Width="1.5" PointX="1.5" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.CRM" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.Equipment" Width="1.5" PointX="8" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.EquipmentType" Width="1.5" PointX="5.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.Events" Width="1.5" PointX="8" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.Gender" Width="1.5" PointX="1.5" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.InstallationEquipment" Width="1.5" PointX="10.25" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.ProblemType" Width="1.5" PointX="3.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.ReasonForTermination" Width="1.5" PointX="1.5" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.Role" Width="1.5" PointX="5.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.Service" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.Sotrudnik" Width="1.5" PointX="8" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.StatusServices" Width="1.5" PointX="3.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.Subscriber" Width="1.5" PointX="3.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.sysdiagrams" Width="1.5" PointX="2.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.TypeOfService" Width="1.5" PointX="3.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM4Model.TypeService" Width="1.5" PointX="3.75" PointY="22" IsExpanded="true" />
+        <AssociationConnector Association="CRM4Model.FK_ConnectedService_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_ConnectedService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_Contract_ContractType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_Contract_ReasonForTermination" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_CRM_ProblemType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_CRM_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_CRM_StatusServices" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_CRM_Subscriber" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_CRM_TypeOfService" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_CRM_TypeService" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_Equipment_EquipmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_InstallationEquipment_Equipment" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_Events_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_Subscriber_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_InstallationEquipment_Sotrudnik" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_InstallationEquipment_Subscriber" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM4Model.FK_Sotrudnik_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

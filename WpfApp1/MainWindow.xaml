@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1040" MinHeight="600" MinWidth="1040" MaxHeight="600" MaxWidth="1040">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Button x:Name="TNC" Margin="6" Height="68">Логотип НТС</Button>
+            <Button x:Name="abo" Margin="6,0,6,6" Height="34">Абоненты</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Button x:Name="uo" Margin="6" Height="34">Управ. оборуд.</Button>
+            <Button x:Name="aktiv" Margin="6,0,6,6" Height="34">Активы</Button>
+            <Button x:Name="bill" Margin="6,0,6,6" Height="34">Биллинг</Button>
+            <Button x:Name="pp" Margin="6,0,6,6" Height="34">Поддержка</Button>
+            <Button x:Name="crm" Margin="6,0,6,6" Height="34">CRM</Button>
+            <Button x:Name="prof" Width="36" Height="36" Margin="10,70,10,8" >проф.</Button>
+            <Button x:Name="w" Width="36" Height="36" Margin="10,0,10,10"  FontWeight="Bold">?</Button>
+        </StackPanel>
+        <TextBlock Grid.Row="0" Grid.Column="1" Margin="20" FontSize="26" FontWeight="DemiBold">Абоненты ТНС</TextBlock>
+        <StackPanel Grid.Row="0" Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock x:Name="name" FontSize="15" FontWeight="DemiBold" Margin="10,20,10,20">ФИО пользователя</TextBlock>
+            <Image x:Name="img" Width="60" Height="60" >
+                <Image.Clip>
+                    <EllipseGeometry Center="30,30" RadiusX="30" RadiusY="30" />
+                </Image.Clip>
+            </Image>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <TextBlock Background="LightGray" Height="44" FontSize="18" TextAlignment="Center" Padding="8">События</TextBlock>
+        </StackPanel>
+
+
+
+        <Frame Name="frm" Grid.Row="1" Grid.Column="1"></Frame>
+    </Grid>
+</Window>
