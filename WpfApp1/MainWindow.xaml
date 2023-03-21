@@ -18,7 +18,7 @@
         </Grid.ColumnDefinitions>
         <StackPanel>
             <Button x:Name="TNC" Margin="6" Height="68">Логотип НТС</Button>
-            <Button x:Name="abo" Margin="6,0,6,6" Height="34">Абоненты</Button>
+            <Button x:Name="abo" Margin="6,0,6,6" Height="34" Click="abo_Click">Абоненты</Button>
         </StackPanel>
         <StackPanel Grid.Row="1">
             <Button x:Name="uo" Margin="6" Height="34">Управ. оборуд.</Button>

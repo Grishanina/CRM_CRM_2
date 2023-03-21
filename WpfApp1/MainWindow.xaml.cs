@@ -31,5 +31,9 @@ namespace WpfApp1
 
         }
 
+        private void abo_Click(object sender, RoutedEventArgs e)
+        {
+            Class1.Mfrm.Navigate(new Sub());
+        }
     }
 }
